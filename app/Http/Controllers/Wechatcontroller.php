@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
-class Wechatcontroller extends Controller
+class WechatController extends Controller
 {
     /**
      * 处理微信的请求消息
