@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('simple-about');
-});
+Route::get('/', 'CompanyController@about');
 
 Route::any('/wechat', 'WechatController@serve');
