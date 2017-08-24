@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use EasyWeChat\Foundation\Application;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CompanyController extends Controller
 {
@@ -11,6 +12,7 @@ class CompanyController extends Controller
     {
         $js = $wechat->js;
         $js->setUrl('magical.echofault.com/images');
+        Log::info($js->ticket());
         return view('simple-about', ['js' => $js]);
     }
 }
