@@ -10,7 +10,7 @@ class CompanyController extends Controller
     public function about(Application $wechat)
     {
         $js = $wechat->js;
-        $js->setUrl('magical.echofault.com');
+        $js->setUrl('magical.echofault.com/images');
         return view('simple-about', ['js' => $js]);
     }
 }
