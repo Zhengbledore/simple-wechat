@@ -955,12 +955,12 @@
 </script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-    wx.config( <?php echo $js->config(array('onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareTimeline', 'onMenuShareAppMessage'), true) ?>);
+    wx.config( <?php echo $js->config(array('onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareTimeline', 'onMenuShareAppMessage'), false) ?>);
 
     wx.ready(function(){
         wx.onMenuShareTimeline({
             title: '测试123', // 分享标题
-            link: 'magical.echofault.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            link: 'www.echofault.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
             imgUrl: 'magical.echofault.com/images/WechatIMG27.jpeg', // 分享图标
             success: function () {
                 // 用户确认分享后执行的回调函数
