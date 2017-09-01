@@ -946,7 +946,7 @@
             tmpCode.show();
             tmpCode.addClass('animated fadeInUp');
         };
-        setTimeout(showQrCode, 1000);
+        setTimeout(showQrCode, 20000);
 
         $('#next-page').on('click', function(){
             window.location.href = 'http://www.echofault.com';
