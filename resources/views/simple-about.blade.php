@@ -955,12 +955,12 @@
 </script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-    wx.config( <?php echo $js->config(array('onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareTimeline', 'onMenuShareAppMessage'), false) ?>);
+    wx.config( <?php echo $js->config(array('onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareTimeline', 'onMenuShareAppMessage'), true) ?>);
 
     wx.ready(function(){
         wx.onMenuShareTimeline({
             title: '测试123', // 分享标题
-            link: 'www.echofault.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            link: 'http://magical.echofault.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
             imgUrl: 'magical.echofault.com/images/WechatIMG27.jpeg', // 分享图标
             success: function () {
                 // 用户确认分享后执行的回调函数
@@ -973,7 +973,7 @@
         wx.onMenuShareAppMessage({
             title: '测试321', // 分享标题
             desc: '啦啦啦啦啦', // 分享描述
-            link: 'www.echofault.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            link: 'http://magical.echofault.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
             imgUrl: 'magical.echofault.com/images/WechatIMG27.jpeg', // 分享图标
             type: 'link', // 分享类型,music、video或link，不填默认为link
             dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
